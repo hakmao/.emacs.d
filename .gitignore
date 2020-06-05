@@ -1,0 +1,66 @@
+# ##################
+#
+# jcf's .gitignore
+#
+# ##################
+
+# General
+# =======
+.hgignore
+.c9
+.DS_Store
+Thumbs.db
+.localized
+
+# Editor files 
+# ============
+*~
+~*
+*.sw?
+.brackets.json
+.idea/
+workspace.xml
+.vscode/
+*.clang-format
+*.elc
+transient/
+elpa/
+
+# Log files and Temporary files
+# ===============
+*.tmp
+temp/
+tmp/
+log/*
+
+# Generated files and output directories
+# ======================================
+cmake-build-debug/
+build/
+bin/
+
+# C and C++
+# =========
+*.o
+*.so
+*.so.*
+*.dylib
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+install_manifest.txt
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+
+# Lisp
+# ====
+*.ofasl
+*.ufasl
+*.64fasl
+*.ffasl
+*.pfasl
+*.xfasl
+
