@@ -63,9 +63,19 @@
   (setq spacemacs-theme-comment-italic +1)
   (load-theme 'spacemacs-dark +1)) 
 
-;; (use-package doom-modeline
-;;   :ensure t
-;;   :init (doom-modeline 1))
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
+
+;; Doom modeline
+(setq doom-modeline-window-width-limit fill-column)
+(setq find-file-visit-truename t)
+(setq doom-modeline-continuous-word-count-modes '(markdown-mode gfm-mode org-mode))
+(setq doom-modeline-buffer-encoding t)
+(setq doom-modeline-indent-info nil)
+(setq doom-modeline-lsp t)
+(setq doom-modeline-modal-icon t)
+(setq doom-modeline-env-version t)
 
 ;; (use-package nyan-mode
 ;;   :ensure t
@@ -74,6 +84,9 @@
 (use-package beacon
   :ensure t
   :config (beacon-mode 1))
+
+(setq beacon-push-mark 35) ; push the mark when point moves over 35 lines
+(setq beacon-color "#FF0080") ; hot pink
 
 (use-package winner
   :init (winner-mode t))
